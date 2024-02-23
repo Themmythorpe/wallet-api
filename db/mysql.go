@@ -12,12 +12,7 @@ var DB *gorm.DB // Exported variable
 
 // InitDB initializes a connection to the MySQL database using GORM
 func InitDB() (*gorm.DB, error) {
-    // Print out the values of environment variables
-    fmt.Println("DB_USERNAME:", os.Getenv("DB_USERNAME"))
-    fmt.Println("DB_PASSWORD:", os.Getenv("DB_PASSWORD"))
-    fmt.Println("DB_HOST:", os.Getenv("DB_HOST"))
-    fmt.Println("DB_PORT:", os.Getenv("DB_PORT"))
-    fmt.Println("DB_NAME:", os.Getenv("DB_NAME"))
+  
 
     // Construct the dataSourceName using environment variables
     dataSourceName := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s",
