@@ -5,8 +5,13 @@ A Go-based backend API with Gin framework for managing user wallets, transaction
 To run the project locally, you'll need to follow these steps:
 
 Clone the Repository
-git clone <repository-url>
+git clone https://github.com/Themmythorpe/wallet-api.git
+
+
+
 Set up Environment Variables
+
+
 DB_USERNAME=
 DB_PASSWORD=
 DB_HOST=127.0.0.1
@@ -20,12 +25,18 @@ go mod tidy
 
 
 Run migrations
+
+
 migrate -path db/migrations -database "mysql://username:password@tcp(hostname:port)/dbname" up
 
 Build the Application
+
+
 go build -o walletapp
 
 Run the Application
+
+
 ./walletapp
 
 
